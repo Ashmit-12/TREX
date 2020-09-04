@@ -160,10 +160,14 @@ function spawnObstacles() {
 }
 function restart(){
   gameState=1;
- count=0;
+
  
  trex.changeAnimation("running",trexrunning);
  obstacleGroup.destroyEach();
   cloudGroup.destroyEach();
- 
+  if(localStorage["H Score"]<count){
+  localStorage["H Score"]=count;
+  }
+ console.log(localStorage["H Score"])
+   count=0;
 }
