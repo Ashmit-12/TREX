@@ -165,9 +165,9 @@ function restart(){
  trex.changeAnimation("running",trexrunning);
  obstacleGroup.destroyEach();
   cloudGroup.destroyEach();
-  if(localStorage["H Score"]<count){
-  localStorage["H Score"]=count;
+  if(localStorage["HScore"]<count){
+  localStorage["HScore"]=count;
   }
- console.log(localStorage["H Score"])
+ console.log(localStorage["HScore"])
    count=0;
 }
