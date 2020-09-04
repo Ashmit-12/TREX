@@ -65,7 +65,7 @@ trex.collide(invisibleground);
   reset.visible=false;
     
   if(keyDown("space")&&trex.y>=149){
-  trex.velocityY=-16;
+  trex.velocityY=-12;
   jumpsound.play();
   }
   ground.velocityX=-2;
